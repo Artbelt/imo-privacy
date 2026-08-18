@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Политика конфиденциальности — їmo</title>
+  <meta name="description" content="Политика конфиденциальности мобильного приложения їmo — счётчик калорий для Android.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #edebe7;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #555;
+      --accent: #3974ff;
+      --border: #ddd;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --card: #1e1e1e;
+        --text: #f0f0f0;
+        --muted: #aaa;
+        --border: #333;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+    header {
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    main {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 20px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 28px 0 10px;
+      color: var(--accent);
+    }
+    h2:first-child { margin-top: 0; }
+    p, li { font-size: 0.95rem; }
+    ul { padding-left: 1.25rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      margin: 12px 0;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: rgba(57, 116, 255, 0.08); }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Политика конфиденциальности</h1>
+      <p class="meta">Приложение <strong>їmo</strong> · Android · версия документа 1.0 · 18 августа 2026</p>
+    </header>
+
+    <main>
+      <h2>1. О чём этот документ</h2>
+      <p>
+        Эта политика описывает, какие данные обрабатывает мобильное приложение <strong>їmo</strong>,
+        зачем это нужно, где хранятся данные и какие у вас есть права.
+      </p>
+      <p>
+        Приложение помогает вести дневник питания, воды и веса, рассчитывает цели по калориям и БЖУ
+        и может давать подсказки с помощью ИИ. <strong>їmo не является медицинским изделием</strong>
+        и не заменяет консультацию врача или диетолога.
+      </p>
+      <p>Оператор: разработчик приложения <strong>їmo</strong> (Artbelt).</p>
+
+      <h2>2. Кратко: что мы собираем</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Категория</th>
+            <th>Примеры</th>
+            <th>Где</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Аккаунт</td>
+            <td>email, Google ID</td>
+            <td>Supabase (при входе)</td>
+          </tr>
+          <tr>
+            <td>Профиль</td>
+            <td>вес, рост, возраст, цели</td>
+            <td>Телефон + облако</td>
+          </tr>
+          <tr>
+            <td>Дневник</td>
+            <td>еда, калории, БЖУ</td>
+            <td>Телефон + облако</td>
+          </tr>
+          <tr>
+            <td>Камера</td>
+            <td>штрихкод, OCR этикетки</td>
+            <td><strong>На устройстве</strong></td>
+          </tr>
+          <tr>
+            <td>Микрофон</td>
+            <td>голосовой ввод</td>
+            <td><strong>На устройстве</strong></td>
+          </tr>
+          <tr>
+            <td>Health Connect</td>
+            <td>тренировки, калории (чтение)</td>
+            <td>Устройство, не в облако</td>
+          </tr>
+          <tr>
+            <td>ИИ</td>
+            <td>контекст рациона</td>
+            <td>OpenRouter (если включено)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Без входа</strong> приложение работает локально; синхронизация не выполняется.</p>
+
+      <h2>3. Как мы используем данные</h2>
+      <ul>
+        <li>Вести дневник и показывать статистику.</li>
+        <li>Рассчитывать суточный бюджет калорий и БЖУ.</li>
+        <li>Синхронизировать данные между устройствами после входа.</li>
+        <li>Обновлять каталог продуктов.</li>
+        <li>Отправлять локальные напоминания о воде.</li>
+        <li>Формировать ИИ-подсказки (если доступны).</li>
+        <li>Показывать активность из Health Connect (с вашего разрешения).</li>
+      </ul>
+      <p>Мы не продаём персональные данные и не используем их для рекламы внутри їmo.</p>
+
+      <h2>4. Разрешения Android</h2>
+      <ul>
+        <li><strong>Камера</strong> — штрихкод и фото этикетки.</li>
+        <li><strong>Микрофон</strong> — голосовой ввод.</li>
+        <li><strong>Уведомления</strong> — напоминания о воде.</li>
+        <li><strong>Health Connect</strong> — только чтение тренировок и калорий.</li>
+      </ul>
+
+      <h2>5. Сторонние сервисы</h2>
+      <ul>
+        <li><a href="https://supabase.com">Supabase</a> — аккаунт и синхронизация.</li>
+        <li><a href="https://openrouter.ai">OpenRouter</a> — ИИ-подсказки и консультант.</li>
+        <li><strong>Google</strong> — вход через Google, распознавание речи на части устройств, ML Kit OCR на устройстве.</li>
+      </ul>
+
+      <h2>6. Камера, микрофон и Health Connect</h2>
+      <ul>
+        <li>Камера включается только при сканировании; видео не отправляется на наш сервер.</li>
+        <li>Микрофон — только во время голосового ввода.</li>
+        <li>Health Connect: только чтение; данные не загружаются в Supabase.</li>
+      </ul>
+
+      <h2>7. Дети</h2>
+      <p>Приложение для пользователей <strong>от 14 лет</strong>. Мы не собираем данные детей младше 14 лет намеренно.</p>
+
+      <h2>8. Ваши права</h2>
+      <ul>
+        <li>Просматривать и редактировать данные в приложении.</li>
+        <li>Экспортировать каталог продуктов (JSON).</li>
+        <li>Выйти из аккаунта — локальные данные остаются на телефоне.</li>
+        <li>Запросить удаление облачных данных.</li>
+      </ul>
+      <p>
+        <strong>Удаление данных:</strong> создайте
+        <a href="https://github.com/Artbelt/imo-privacy/issues/new">запрос в этом репозитории</a>
+        с темой «Удаление данных» и укажите email аккаунта.
+      </p>
+
+      <h2>9. Безопасность и хранение</h2>
+      <p>
+        Облачные запросы идут по HTTPS. Локальная база хранится в защищённой области приложения Android.
+        Данные в Supabase хранятся, пока действует аккаунт.
+      </p>
+
+      <h2>10. Изменения</h2>
+      <p>
+        Актуальная версия всегда на этой странице. При существенных изменениях мы постараемся
+        уведомить через описание обновления в Google Play или в приложении.
+      </p>
+
+      <h2>11. Контакты</h2>
+      <p>
+        <a href="https://github.com/Artbelt/imo-privacy/issues">GitHub Issues</a> ·
+        <a href="https://github.com/Artbelt/imo-privacy">Репозиторий политики</a>
+      </p>
+    </main>
+
+    <footer>
+      <p>їmo · политика конфиденциальности</p>
+    </footer>
+  </div>
+</body>
+</html>
