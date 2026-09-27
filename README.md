@@ -4,11 +4,11 @@
 
 Основной код приложения — в приватном репозитории; здесь только юридическая страница для Google Play, Health Connect и ссылки из приложения.
 
-## Публичный URL
+## Публичные URL
 
-После включения GitHub Pages:
-
-**https://artbelt.github.io/imo-privacy/**
+- Русский: https://artbelt.github.io/imo-privacy/
+- Українська: https://artbelt.github.io/imo-privacy/uk/
+- English: https://artbelt.github.io/imo-privacy/en/
 
 ## GitHub Pages (один раз)
 
@@ -19,14 +19,14 @@
 
 ## Обновление текста
 
-1. Отредактируйте `index.html`
+1. Отредактируйте `index.html` (ru), `uk/index.html` и `en/index.html` синхронно.
 2. Commit + push в `main`
 3. Pages обновится автоматически
 
 ## Связь с приложением
 
-В їmo URL задаётся в `AppConstants.privacyPolicyUrl`:
+В їmo URL задаётся в `AppConstants.privacyPolicyUrlFor`:
 
-```
-https://artbelt.github.io/imo-privacy/
-```
+- `ru` → https://artbelt.github.io/imo-privacy/
+- `uk` → https://artbelt.github.io/imo-privacy/uk/
+- `en` → https://artbelt.github.io/imo-privacy/en/
